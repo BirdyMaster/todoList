@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    
+
+    <div class="allWrap">
+        <nav>
+            <div class="nav_timeFrame">
+            </div>
+            <div class="nav_projects"></div>
+        </nav>
+
+        <main>
+            <div class="main_top">
+                <h1>Today</h1>
+                <div class="main_calender">24. Nov 2022</div>
+            </div>
+
+            <div class="todo_wrap">
+                <div class="todo">
+                    <div class="todo_textInputs_wrap">
+                        <h3 class="todo_title">Training</h3>
+                        <p class="todo_desc">Front lever/planche</p>
+                    </div>
+                    <div class="todo_buttons_wrap">
+                        <!--<div class="todo_btn edit"></div> -->
+                        <div class="todo_btn delete">
+                            <div class="line one"></div>
+                            <div class="line two"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo template">
+                    <div class="todo_textInputs_wrap">
+                        <input type="text" class="input_todo title" placeholder="Title...">
+                        <input type="text" class="input_todo desc" placeholder="Description...">
+                    </div>
+                    <div class="todo_buttons_wrap submit">
+                        <div class="input_submitBtn done">Done</div>
+                        <div class="input_submitBtn cancel">Cancel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_todo_btn">
+                <p>+ Add new...</p>
+            </div>
+        </main>
+    </div>
+    <!-- <input type="text" class="titleInput" placeholder="Title...">
+    <div class="box">
+        
+
+    </div>
+    <div class="addBtn">Add</div> -->
+
+    <script src="logic.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
