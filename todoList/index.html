@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/todo.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+</head>
+<body>
+    
+    <div class="allWrap">
+        <nav>
+            <div class="nav_timeFrame">
+                <!-- <div class="timeFrame_btn all">All</div>
+                <div class="timeFrame_btn today">Today</div>
+                <div class="timeFrame_btn wekk">This Week</div>
+                <div class="timeFrame_btn month">This Month</div> -->
+            </div>
+            <div class="nav_projects">
+                <h2 class="projects_wrap_title">Projects</h2>
+
+                <div  class="project" data-id="All"><p>All</p></div>
+                <div  class="project" data-id="Gym"><p>Gym</p></div>
+                    
+            </div>
+        </nav>
+
+        <main>
+            <div class="main_top">
+                <h1 class="mainTitle">All thingies</h1>
+            </div>
+            <div class="todo_wrap"></div>
+            <div class="todo template">
+                <div class="todo_textInputs_wrap">
+                    <input type="text" class="input_todo title" placeholder="Title...">
+                    <input type="text" class="input_todo desc" placeholder="Description...">
+                </div>
+                <div class="todo_buttons_wrap submit">
+                    <div class="input_submitBtn done">Done</div>
+                    <div class="input_submitBtn cancel">Cancel</div>
+                </div>
+            </div>
+            <div class="add_todo_btn">
+                <p>+ Add new...</p>
+            </div>
+        </main>
+    </div>
+  
+    <script src="./function/logic.js" type="module"></script>
+    <script src="./function/generate.js" type="module"></script>
+</body>
+</html>
