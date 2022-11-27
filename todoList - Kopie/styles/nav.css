@@ -1,0 +1,203 @@
+nav {
+    width: 220px;
+    height: 100%;
+    background-color: #474747;
+
+    padding: 10px;
+}
+
+.nav_timeFrame {
+    margin-bottom: 30px;
+}
+
+.timeFrame_btn {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+    margin-bottom: 3px;
+    transition: 150ms;
+    cursor: pointer;
+
+}
+
+
+.timeFrame_btn:hover {
+    background-color: rgba(255, 255, 255, 0.091);
+}
+
+.projects_wrap_title {
+    width: 100%;
+    height: 43px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.155);
+}
+
+.project{
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.023);
+
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 150ms;
+
+    margin-bottom: 5px;
+    
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.091);
+}
+
+.project.active {
+    background-color: rgba(255, 255, 255, 0.112);
+}
+
+.addProject_btn {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.023);
+
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 150ms;
+
+    margin-top: 20px;
+}
+
+.addProject_btn:hover {
+    background-color: rgba(255, 255, 255, 0.091);
+}
+
+
+
+
+.bnt_deleteProj {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(255, 155, 155);
+
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: 10px;
+
+    transition: 150ms;
+    cursor: pointer;
+
+}
+
+.bnt_deleteProj:hover {
+    background-color: rgb(255, 98, 98);
+}
+
+.projectTemplate {
+    background-color: rgba(255, 255, 255, 0.048);
+    padding: 8px;
+    border-radius: 5px;
+
+    display: none;
+}
+
+.newProject_titleInput {
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.011);
+    color: white;
+
+    padding-left: 7px;
+}
+
+.projectTemplate_btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px;
+
+    column-gap: 7px;
+    margin-top: 8px;
+
+}
+
+.newProject_titleInput::placeholder {
+    color: rgba(255, 255, 255, 0.815);
+    letter-spacing: 0.3px;
+}
+
+.projectTemplate_submitBtn {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.projectTemplate_submitBtn.done{
+    background-color: rgb(54, 183, 54);
+}
+
+.projectTemplate_submitBtn.done:hover{
+    background-color: rgb(50, 157, 50);
+}
+
+.projectTemplate_submitBtn.cancel{
+    background-color: rgb(249, 89, 89)
+}
+
+.projectTemplate_submitBtn.cancel:hover{
+    background-color: rgb(211, 85, 85)
+}
+
+
+.btn_changeMonth {
+    background-color: rgb(95, 95, 95);
+    width: 35px;
+    height: 35px;
+
+    border-radius: 100px;
+    transition: 150ms;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_changeMonth:hover {
+    background-color: rgb(135, 135, 135);
+}
+
+.btn_changeMonth.prev {
+    margin-left: auto;
+}
+
+.btn_changeMonth.current {
+    margin-left:5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+
