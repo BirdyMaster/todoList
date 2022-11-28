@@ -1,0 +1,133 @@
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    row-gap: 2px;
+    column-gap: 2px;
+    height: 100%;
+
+    padding-bottom: 50px;
+}
+
+.calender_UpperWrap {
+    height: 70px;
+    display: flex;
+
+    align-items: flex-end;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.187);
+
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------- */
+.day {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(76, 76, 76);
+
+    margin: 4px;
+    transition: 150ms;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    position: relative;
+    padding: 5px;
+}
+
+.day:hover {
+    background-color: rgb(108, 108, 108);
+}
+
+.calNumber {
+    color: rgba(255, 255, 255, 0.41);
+    border-radius: 100px;
+
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.calNumber.current {
+    background-color: #f67c00;
+    color: white;
+    font-weight: 600;
+}
+
+.day.current {
+    border-top: 5px solid #f67c00;
+
+}
+
+.day.current > p{
+    font-weight: 700;
+    color: white;
+    
+}
+
+
+
+.mark_activeTodo {
+    width: 10px;
+    height: 10px;
+    /* background-color: rgb(145, 145, 255); */
+    background-color: rgb(159, 159, 252);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.day_passed {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.day_passed:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* ----------------------------------- */
+
+.btn_changeMonth {
+    background-color: rgb(95, 95, 95);
+    width: 35px;
+    height: 35px;
+
+    border-radius: 100px;
+    transition: 150ms;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_changeMonth:hover {
+    background-color: rgb(135, 135, 135);
+}
+
+.btn_changeMonth.prev {
+    margin-left: auto;
+}
+
+.btn_changeMonth.current {
+    margin-left:5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+/* ----------------------------------- */
+

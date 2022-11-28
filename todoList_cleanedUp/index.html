@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/todo.css">
+    <link rel="stylesheet" href="./styles/calender.css">
+</head>
+<body>
+    
+    <div class="allWrap">
+        <main >
+            <div class="calender_UpperWrap">
+                <h1 class="mainTitle"></h1>
+                <div class="btn_changeMonth prev"><</div>
+                <div class="btn_changeMonth current"></div>
+                <div class="btn_changeMonth next">></div>
+            </div>
+            <div class="calender"></div>
+            
+        </main>
+
+        <div class="right_Side">
+            <div class="calender_UpperWrap">
+                <h1 id="title_Right">Title</h1>
+            </div>
+            <div class="todo_wrap_right"></div>
+            <div class="todo template" id="todo_template_right">
+                <div class="todo_textInputs_wrap">
+                    <input type="text" class="input_todo title" id="input_todo_title_right" placeholder="Title...">
+                    <input type="text" class="input_todo desc" id="input_todo_desc_right" placeholder="Description...">
+                </div>
+                <div class="todo_buttons_wrap submit">
+                    <div class="input_submitBtn done" id="input_submitBtn_done_right">Add</div>
+                    <div class="input_submitBtn cancel" id="input_submitBtn_cancel_right">Cancel</div>
+                </div>
+            </div>
+            <div class="add_todo_btn" id="add_todo_btn_right">
+                <p>+ Add new...</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./function/logic.js" type="module"></script>
+    <script src="./function/generate.js" type="module"></script>
+    <script src="./function/eListeners.js" type="module"></script>
+
+    
+</body>
+</html>
