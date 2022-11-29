@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background-color: rgb(66,66,66);
+    height: 97vh;
+    color: rgba(255, 255, 255, 0.822);
+    font-family: "Nunito";
+
+   
+    
+}
+
+h1 {
+    font-size: 25px;
+}
+
+
+
+.allWrap {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-height: 97vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
