@@ -1,0 +1,39 @@
+
+
+.todo.open > .todo_Back > .todo_desc {
+    color: rgba(255, 255, 255, 0.952);
+}
+
+
+
+.todo_desc.preview {
+    opacity: 100%;
+    display: block;
+}
+.todo.open > .todo_Front > .todo_desc.preview {
+    display: none;
+    opacity: 0%;
+    color: red;
+}
+
+
+.line_todoTitle {
+    flex-grow: 0;
+}
+.todo.open > .todo_Front > .line_todoTitle {
+    flex-grow: 1;
+}
+
+
+.todo_Back {
+    overflow: hidden;
+    margin-top: -25px;  
+    opacity: 0%;
+
+    transition: 150ms;
+}
+.todo.open > .todo_Back {
+    margin-top: -10px;  
+    opacity: 100%;
+}
+
